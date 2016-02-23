@@ -1,0 +1,164 @@
+@import "_normalize.scss";
+@import "_variables.scss";
+
+/*------------------------*/
+/* MAIN STYLES BEGIN HERE */
+/*------------------------*/
+
+.intro {
+  background: #999;
+  header {
+    height: 66.66vh;
+    text-align: center;
+    background: url('http://img1.ndsstatic.com/wallpapers/1983705e8171145f6f8542f72e41b3d6_large.jpeg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    h1, h2 {
+      margin: 0;
+      position: relative;
+      top: 8%;
+      color: $textColor;
+      background: rgba(0, 0, 0, 0.4);
+      text-shadow: 2px 2px 2px #000;
+    }
+    h1 {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+    h2 {
+      padding-bottom: 20px;
+    }
+    @media screen and(max-width: 680px) {
+      height: 50vh;
+    }
+  }
+  .summary {
+    height: 33.33vh;
+    padding: 0 $mobilePadding;
+    background: #111;
+    p {
+      display: block;
+      padding: 20px 0;
+      margin-top: 0;
+      color: $textColor;
+      line-height: 1.5em;
+      text-align: center;
+      a {
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid $blue;
+        border-bottom: 5px solid $blue;
+        display: inline-block;
+        margin-top: 10px;
+        color: $blue;
+        border-radius: 50%;
+        &:last-child {
+          border: 1px solid $green;
+          border-bottom: 5px solid $green;
+          color: $green;
+        }
+        &:hover {
+          background: rgba(255,255,255, 0.1);;
+        }
+      }
+      &:last-child {
+        width: 225px;
+        margin: -40px auto;
+      }
+    }
+    @media screen and(max-width: 680px) {
+      height: 50vh;
+    }
+  }
+  .preamble {
+    padding: $sectionPadding $mobilePadding;
+    h3 {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      p {
+        text-align: center;
+        width: 75%;
+        line-height: 1.5em;
+        margin: auto;
+        padding: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+.supporting {
+  background: #111;
+  color: $textColor;
+  div {
+    padding: $sectionPadding $mobilePadding;
+  }
+  .explanation,
+  .benefits {
+    h3 {
+      color: $green;
+    }
+  }
+  .participation {
+    h3 {
+      color: $blue;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $linkColor;
+  }
+  .requirements {
+    background: #333;
+    @media screen and (min-width: 768px) {
+      background: none;
+      h3 {
+        color: $blue;
+      }
+    }
+  }
+  footer {
+    text-align: center;
+    margin: auto;
+    a {
+      margin: 10px;
+      padding: 10px 0;
+      display: inline-block;
+    }
+  }
+}
+
+.sidebar {
+  background: #999;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 1000px;
+      margin: auto;
+      overflow: auto;
+    }
+  }
+  .design-selection,
+  .design-archives,
+  .zen-resources {
+    padding: $sectionPadding $mobilePadding;
+    ul {
+      padding: 0 1em;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+    @media screen and (min-width: 768px) {
+      float: left;
+      margin: auto;
+      display: block;
+    }
+  }
+
+}
